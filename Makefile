@@ -1,7 +1,7 @@
 CXX = g++
 
 INCLUDE += -I./include/
-OPTIONS  = -std=c++11 -O3 -fdata-sections -ffunction-sections -Wl,--gc-sections -Wl,--strip-all
+OPTIONS  = -std=c++11 -O3 -fdata-sections -ffunction-sections -Wl,-search_paths_first -Wl,-dead_strip -v
 WARNINGS = -Wall -Wextra -Werror
 
 MAIN 	= xml2json.o
