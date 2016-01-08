@@ -67,10 +67,10 @@ It follows these simple but carefully considered rules below:
 <code>&lt;e name="value" /&gt;</code>
 </td>
 <td bgcolor="#CCCCCC">
-<code>"e":{"@name": "value"}</code>
+<code>"e":{"_name": "value"}</code>
 </td>
 <td bgcolor="#f0f0f0">
-<code>o.e["@name"]</code>
+<code>o.e["_name"]</code>
 </td>
 </tr>
 
@@ -81,13 +81,13 @@ It follows these simple but carefully considered rules below:
 </td>
 <td bgcolor="#CCCCCC">
 <code>"e": {
-  "@name": "value",
-  "#text": "text"
+  "_name": "value",
+  "$text": "text"
 }</code>
 </td>
 <td bgcolor="#f0f0f0">
-<code>o.e["@name"]
-o.e["#text"]</code>
+<code>o.e["_name"]
+o.e["$text"]</code>
 </td>
 </tr>
 
@@ -140,12 +140,12 @@ o.e.a[1]</code>
 </td>
 <td bgcolor="#CCCCCC">
 <code>"e": {
-  "#text": "text",
+  "$text": "text",
   "a": "text"
 }</code>
 </td>
 <td bgcolor="#f0f0f0">
-<code>o.e["#text"]
+<code>o.e["$text"]
 o.e.a</code>
 </td>
 </tr>
